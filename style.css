@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url("./Assets/padrao-blue-body.png");
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: url("./Assets/cursor-normal.png"), pointer;
+}
+
+.wrapper {
+  width: 127.2rem;
+  margin-inline: auto;
+}
+
+a:hover,
+button:hover {
+  cursor: url("./Assets/cursor.png"), pointer;
+}
+
+/*========== HEADER ==========*/
+header {
+  background-image: url("./Assets/background-elitas.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  height: 55rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header .wrapper .texts {
+  margin-top: 4.6rem;
+}
+
+header .wrapper img {
+  width: 35.7rem;
+  height: 10.4rem;
+}
+
+header .wrapper .title {
+  color: red;
+  font-size: 2.2rem;
+  margin-top: 4.3rem;
+  font-weight: 700;
+}
+
+header .wrapper .subtitle {
+  color: black;
+  font-size: 1.6rem;
+  margin-top: 5.2rem;
+}
+
+/*========== AUTHORS ==========*/
+.authors {
+  position: fixed;
+  right: 0;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.9rem;
+
+  width: 6rem;
+  height: 4rem;
+  background: #0592bd;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 200ms ease;
+}
+
+.authors:hover {
+  padding-inline: 1.5rem;
+  border-radius: 1.4rem;
+
+  width: 26rem;
+  height: 11rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.authors .arrow {
+  display: block;
+}
+.authors:hover .arrow {
+  display: none;
+}
+
+.authors .author {
+  display: none;
+}
+
+.authors:hover .author {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.authors .author .pic-border {
+  width: 4.7rem;
+  height: 4.7rem;
+  border-radius: 50%;
+  border: 1px solid orange;
+
+  display: grid;
+  place-items: center;
+}
+
+.authors .author .pic-container {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+
+  background: linear-gradient(
+    180deg,
+    hsla(47, 94%, 56%) 0%,
+    hsla(0, 96%, 63%) 100%
+  );
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.authors .author img {
+  width: 3.6rem;
+}
+
+.authors .author:nth-child(3) img {
+  width: 4rem;
+}
+
+.authors .author p {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.authors .author .social-icons {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.authors .author a {
+  text-decoration: none;
+  appearance: none;
+}
+
+.authors .author svg {
+  width: 2rem;
+}
+
+.authors .author svg path:nth-child(2) {
+  fill: white;
+}
+
+/*========== NAV ==========*/
+nav {
+  width: 100%;
+  background: linear-gradient(rgb(104, 177, 223, 0.8), rgb(69, 120, 165, 0.9));
+}
+
+nav .wrapper {
+  height: 9rem;
+  padding-inline: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h2 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+nav button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 31.6rem;
+  height: 5.7rem;
+  padding-inline: 1.5rem;
+  border: 0.1rem solid rgba(124, 124, 124, 0.5);
+  border-radius: 0.5rem;
+  background: linear-gradient(rgb(255, 255, 255), rgb(177, 177, 177));
+
+  font-size: 2rem;
+  color: black;
+}
+
+nav button::after {
+  content: "";
+  background: black;
+  width: 2.4rem;
+  height: 0.1rem;
+}
+
+/*========== SECTION ==========*/
+.content {
+  padding-bottom: 4.5rem;
+}
+
+.content .wrapper {
+  display: grid;
+  padding-inline: 3rem;
+  padding-top: 1.7rem;
+  padding-bottom: 3rem;
+
+  background: hsla(0, 0%, 100%, 0.5);
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3rem;
+}
+
+.content .wrapper .card {
+  width: 38.4rem;
+  height: 32.3rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1.5rem;
+  height: 6.7rem;
+  width: 100%;
+  background: linear-gradient(rgb(104, 177, 223), rgb(69, 120, 165));
+}
+
+.card-title div {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.card-title div img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.card-title p {
+  color: white;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.card-title div span {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.card img {
+  width: 100%;
+  height: 21rem;
+}
+
+.card .plane-name-price {
+  width: 100%;
+  height: 4.6rem;
+  background: #35546f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1.5rem;
+}
+
+.plane-name-price p {
+  display: inline-block;
+  color: white;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
