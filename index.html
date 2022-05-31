@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
+
+        <button id="home" onclick="homeReturn()">
+        </button>
+
         <header>
             <div class="authors">
                 <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" fill="rgba(255,255,255,1)"/></svg>
@@ -15,7 +19,7 @@
                 <div class="author">
                     <div class="pic-border">
                         <div class="pic-container">
-                            <img src="./Assets/social-icons/xande-pic2.png" alt="">
+                            <img src="./Assets/social-profile-pics/xande-pic.png" alt="">
                         </div>
                     </div>
                     <p>@xandekoch</p>
@@ -34,8 +38,8 @@
 
                 <div class="author">
                     <div class="pic-border">
-                        <div class="pic">
-                            <img src="./Assets/social-icons/thyago-pic.png" alt="">
+                        <div class="pic-container">
+                            <img src="./Assets/social-profile-pics/thyago-pic.png" alt="">
                         </div>
                     </div>
                     <p>@thyagomonnerat</p>
@@ -52,68 +56,92 @@
                     </div>
                 </div>
             </div>
-
-            <div class="wrapper">
-                <div class="texts">
-                    <img src="./Assets/elitas-travel-logo.png" alt="Logo">
-                    <h2 class="title">Existe a primeira classe, e depois exista a <br> Elitas.</h2>
-                    <p class="subtitle">A diferença entre um voo particular e um comercial é semelhante <br> a uma limusine e um ônibus penitenciário da Guatemala.</p>
+                
+                <div class="wrapper">
+                    <div class="texts">
+                        <img src="./Assets/elitas-travel-logo.png" alt="Logo">
+                        <h2 class="title">Existe a primeira classe, e depois existe a <br> Elitas.</h2>
+                        <p class="subtitle">A diferença entre um voo particular e um comercial é semelhante <br> a uma limusine e um ônibus penitenciário da Guatemala.</p>
+                    </div>
                 </div>
-            </div>
-
+    
             <nav>
                 <div class="wrapper">               
                     <h2>Novidades no estoque</h2>
                 
-                    <button>
+                    <button class="button-style">
                         Organizar por preço
                     </button>
+
+                    <p id="planeName"></p>
+                    <p id="planePrice"></p>
                 </div>
             </nav>
         </header>
         
         <section class="content">
             <div class="wrapper">
-                <div class="card">
-                    <div class="card-title">
-                        <p>
-                            PARTE DA ATUALIZAÇÃO <br> DINHEIRO SUJO PARTE 1
-                        </p>
 
-                        <div>
-                            <img src="./Assets/icone-do-card.png" alt="">
-                            <span>8</span>
-                        </div>
-                    </div>
+                <div class="plane-info">
+                        <img id="imgPath" src="./Assets/planes-clicked/.png" alt="">
 
-                    <img src="./Assets/avioes-modelo/1 LuxorDeluxe-GTAV-front.png" alt="">
-
-                    <div class="plane-name-price">
-                        <p>Luxor Deluxe</p>
-                        <p>$10,000,000</p>
+                    <div>
+                        <button class="button-style">COMPRE JÁ</button>
+                        <p id="planeDescription"></p>
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card-title">
-                        <p>
-                            PARTE DA ATUALIZAÇÃO <br> DINHEIRO SUJO PARTE 1
-                        </p>
+                <div class="plane-info-bar">
+                    <h2>Novidades no estoque</h2>
+                    <button class="button-style">Organizar por preço</button>
+                </div>
+                
+                <div class="cards">
+                <a href="#" onclick="openPlane(planesData.luxorDeluxe)">
+                        <div class="card">
+                        <div class="card-title">
+                                <p>
+                                    PARTE DA ATUALIZAÇÃO <br> DINHEIRO SUJO PARTE 1
+                                </p>
+        
+                                <div>
+                                    <img src="./Assets/icone-do-card.png" alt="">
+                                    <span>8</span>
+                                </div>
+                            </div>
+        
+                            <img src="./Assets/planes-thumb/1 LuxorDeluxe-GTAV-front.png" alt="">
+        
+                            <div class="plane-name-price">
+                                <p>Luxor Deluxe</p>
+                                <p>$10,000,000</p>
+                            </div>
+                        </div>
+                    </a>
 
-                        <div>
-                            <img src="./Assets/icone-do-card.png" alt="">
-                            <span>4</span>
+                <a href="#" onclick="openPlane(planesData.swiftDeluxe)">
+                    <div class="card">
+                        <div class="card-title">
+                            <p>
+                                PARTE DA ATUALIZAÇÃO <br> DINHEIRO SUJO PARTE 1
+                            </p>
+    
+                            <div>
+                                <img src="./Assets/icone-do-card.png" alt="">
+                                <span>4</span>
+                            </div>
+                        </div>
+    
+                        <img src="./Assets/planes-thumb/2-SwiftDeluxe-GTAV-front.png" alt="">
+    
+                        <div class="plane-name-price">
+                            <p>swift DELUXE</p>
+                            <p>$5,150,000</p>
                         </div>
                     </div>
+                </a>
 
-                    <img src="./Assets/avioes-modelo/2-SwiftDeluxe-GTAV-front.png" alt="">
-
-                    <div class="plane-name-price">
-                        <p>LUXOR DELUXE</p>
-                        <p>$10,000,000</p>
-                    </div>
-                </div>
-
+                <a href="#" onclick="openPlane(planesData.vestra)">
                 <div class="card">
                     <div class="card-title">
                         <p>
@@ -126,14 +154,16 @@
                         </div>
                     </div>
 
-                    <img src="./Assets/avioes-modelo/3-Vestra-GTAV-front.png" alt="">
+                    <img src="./Assets/planes-thumb/3-Vestra-GTAV-front.png" alt="">
 
                     <div class="plane-name-price">
                         <p>Vestra</p>
                         <p>$950,000</p>
                     </div>
                 </div>
+                </a>
 
+                <a href="#" onclick="openPlane(planesData.miljet)">
                 <div class="card">
                     <div class="card-title">
                         <p>
@@ -146,14 +176,16 @@
                         </div>
                     </div>
 
-                    <img src="./Assets/avioes-modelo/4-Miljet-GTAV-front.png" alt="">
+                    <img src="./Assets/planes-thumb/4-Miljet-GTAV-front.png" alt="">
 
                     <div class="plane-name-price">
                         <p>Miljet</p>
                         <p>$1,750,000</p>
                     </div>
                 </div>
+                </a>
 
+                <a href="#" onclick="openPlane(planesData.besra)">
                 <div class="card">
                     <div class="card-title">
                         <p>
@@ -166,14 +198,16 @@
                         </div>
                     </div>
 
-                    <img src="./Assets/avioes-modelo/5-Besra-GTAV-front.png" alt="">
+                    <img src="./Assets/planes-thumb/5-Besra-GTAV-front.png" alt="">
 
                     <div class="plane-name-price">
                         <p>Besra</p>
                         <p>$658,000</p>
                     </div>
                 </div>
+                </a>
 
+                <a href="#" onclick="openPlane(planesData.swift)">
                 <div class="card">
                     <div class="card-title">
                         <p>
@@ -186,14 +220,16 @@
                         </div>
                     </div>
 
-                    <img src="./Assets/avioes-modelo/6-SwiftClassic-GTAV-front.png" alt="">
+                    <img src="./Assets/planes-thumb/6-SwiftClassic-GTAV-front.png" alt="">
 
                     <div class="plane-name-price">
                         <p>Swift</p>
                         <p>$1,500,000 - $1,600,000</p>
                     </div>
                 </div>
+            </a>
 
+                <a href="#" onclick="openPlane(planesData.duster)">
                 <div class="card">
                     <div class="card-title">
                         <p>
@@ -206,14 +242,16 @@
                         </div>
                     </div>
 
-                    <img src="./Assets/avioes-modelo/7-Duster-GTAV-front.png" alt="">
+                    <img src="./Assets/planes-thumb/7-Duster-GTAV-front.png" alt="">
 
                     <div class="plane-name-price">
                         <p>Duster</p>
                         <p>$275,000</p>
                     </div>
                 </div>
+            </a>
 
+                <a href="#" onclick="openPlane(planesData.shamal)"> 
                 <div class="card">
                     <div class="card-title">
                         <p>
@@ -226,14 +264,16 @@
                         </div>
                     </div>
 
-                    <img src="./Assets/avioes-modelo/8-Shamal-GTAV-front.png" alt="">
+                    <img src="./Assets/planes-thumb/8-Shamal-GTAV-front.png" alt="">
 
                     <div class="plane-name-price">
                         <p>Shamal</p>
                         <p>$1,150,000</p>
                     </div>
                 </div>
+            </a>
 
+                <a href="#" onclick="openPlane(planesData.cuban800)">
                 <div class="card">
                     <div class="card-title">
                         <p>
@@ -246,14 +286,16 @@
                         </div>
                     </div>
 
-                    <img src="./Assets/avioes-modelo/9-Cuban800-GTAV-front.png" alt="">
+                    <img src="./Assets/planes-thumb/9-Cuban800-GTAV-front.png" alt="">
 
                     <div class="plane-name-price">
                         <p>Cuban 800</p>
                         <p>$240,000</p>
                     </div>
                 </div>
+            </a>
 
+                <a href="#" onclick="openPlane(planesData.luxor)">
                 <div class="card">
                     <div class="card-title">
                         <p>
@@ -266,14 +308,16 @@
                         </div>
                     </div>
 
-                    <img src="./Assets/avioes-modelo/10 Luxor-GTAV-front.png" alt="">
+                    <img src="./Assets/planes-thumb/10 Luxor-GTAV-front.png" alt="">
 
                     <div class="plane-name-price">
                         <p>Luxor</p>
                         <p>$1,500,000</p>
                     </div>
                 </div>
+            </a>
 
+                <a href="#" onclick="openPlane(planesData.mallard)">
                 <div class="card">
                     <div class="card-title">
                         <p>
@@ -286,14 +330,16 @@
                         </div>
                     </div>
 
-                    <img src="./Assets/avioes-modelo/11 Mallard-GTAV-front.png" alt="">
+                    <img src="./Assets/planes-thumb/11 Mallard-GTAV-front.png" alt="">
 
                     <div class="plane-name-price">
                         <p>Mallard</p>
                         <p>$250,000</p>
                     </div>
                 </div>
-
+            </a>
+            
+                <a href="#" onclick="openPlane(planesData.frogger)">
                 <div class="card">
                     <div class="card-title">
                         <p>
@@ -306,14 +352,16 @@
                         </div>
                     </div>
 
-                    <img src="./Assets/avioes-modelo/12 Frogger-GTAV-front.png" alt="">
+                    <img src="./Assets/planes-thumb/12 Frogger-GTAV-front.png" alt="">
 
                     <div class="plane-name-price">
                         <p>Frogger</p>
-                        <p>%1,300,000</p>
+                        <p>$1,300,000</p>
                     </div>
                 </div>
+            </a>
 
+                <a href="#" onclick="openPlane(planesData.maverick)">
                 <div class="card">
                     <div class="card-title">
                         <p>
@@ -326,13 +374,15 @@
                         </div>
                     </div>
 
-                    <img src="./Assets/avioes-modelo/13 Maverick-GTAV-front.png" alt="">
+                    <img src="./Assets/planes-thumb/13 Maverick-GTAV-front.png" alt="">
 
                     <div class="plane-name-price">
                         <p>Maverick</p>
                         <p>$780,000</p>
                     </div>
                 </div>
+            </a>
+            </div>
             </div>
         </section>
 
