@@ -230,13 +230,23 @@ nav p{
   text-transform: uppercase;
 }
 
-nav button {
+nav button{
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 31.6rem;
   height: 5.7rem;
   padding-inline: 1.5rem;
+}
+
+nav button #arrowUp{
+  width: 4rem;
+  height: 4rem;
+}
+
+nav button #arrowDown{
+  width: 2rem;
+  height: 2rem;
 }
 
 nav button::after {
@@ -261,14 +271,10 @@ nav button:hover::after {
 }
 
 .content .wrapper .cards {
-  display: grid;
   padding-inline: 3rem;
   padding-top: 1.7rem;
   padding-bottom: 3rem;
 
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 3rem;
 }
 
 .content .wrapper .card {
@@ -434,3 +440,67 @@ body.clicked nav h2,
 body.clicked nav button {
   display: none;
 } 
+
+.orderList{
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3rem;
+}
+
+.orderListChange li:first-child{
+  order: 13;
+}
+
+.orderListChange li:nth-child(2){
+  order: 12;
+}
+
+.orderListChange li:nth-child(3){
+  order: 6;
+}
+
+.orderListChange li:nth-child(4){
+  order: 11;
+}
+
+.orderListChange li:nth-child(5){
+  order: 4;
+}
+
+.orderListChange li:nth-child(6){
+  order: 10;
+}
+
+.orderListChange li:nth-child(7){
+  order: 3;
+}
+
+.orderListChange li:nth-child(8){
+  order: 7;
+}
+
+.orderListChange li:nth-child(9){
+  order: 1;
+}
+
+.orderListChange li:nth-child(10){
+  order: 9;
+}
+
+.orderListChange li:nth-child(11){
+  order: 2;
+}
+
+.orderListChange li:nth-child(12){
+  order: 8;
+}
+
+.orderListChange li:nth-child(13){
+  order: 5;
+}
+ 
+
+.none{
+  display: none;
+}

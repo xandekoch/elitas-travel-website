@@ -65,12 +65,14 @@
                     </div>
                 </div>
     
-            <nav>
+            <nav id="navScroll">
                 <div class="wrapper">               
                     <h2>Novidades no estoque</h2>
                 
-                    <button class="button-style">
+                    <button id="navButton" class="button-style" onclick="orderList()">
                         Organizar por preço
+                        <img id="arrowUp" src="./arrow-up.png" alt="">
+                        <img id="arrowDown" src="./arrow-down.png" alt="">
                     </button>
 
                     <p id="planeName"></p>
@@ -96,54 +98,58 @@
                     <button class="button-style">Organizar por preço</button>
                 </div>
                 
-                <div class="cards">
-                <a href="#" onclick="openPlane(planesData.luxorDeluxe)">
+                <div id="listOrderId" class="cards">
+                    <ol class="orderList">
+                        <li>
+                        <a href="#navScroll" onclick="openPlane(planesData.luxorDeluxe)">
                         <div class="card">
                         <div class="card-title">
-                                <p>
-                                    PARTE DA ATUALIZAÇÃO <br> DINHEIRO SUJO PARTE 1
-                                </p>
-        
-                                <div>
-                                    <img src="./Assets/icone-do-card.png" alt="">
-                                    <span>8</span>
-                                </div>
-                            </div>
-        
-                            <img src="./Assets/planes-thumb/1 LuxorDeluxe-GTAV-front.png" alt="">
-        
-                            <div class="plane-name-price">
-                                <p>Luxor Deluxe</p>
-                                <p>$10,000,000</p>
-                            </div>
-                        </div>
-                    </a>
+                        <p>
+                            PARTE DA ATUALIZAÇÃO <br> DINHEIRO SUJO PARTE 1
+                        </p>
 
-                <a href="#" onclick="openPlane(planesData.swiftDeluxe)">
-                    <div class="card">
+                        <div>
+                            <img src="./Assets/icone-do-card.png" alt="">
+                            <span>8</span>
+                        </div>
+                        </div>
+
+                        <img src="./Assets/planes-thumb/1 LuxorDeluxe-GTAV-front.png" alt="">
+
+                        <div class="plane-name-price">
+                        <p>Luxor Deluxe</p>
+                        <p>$10,000,000</p>
+                        </div>
+                        </div>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#navScroll" onclick="openPlane(planesData.swiftDeluxe)">
+                        <div class="card">
                         <div class="card-title">
                             <p>
                                 PARTE DA ATUALIZAÇÃO <br> DINHEIRO SUJO PARTE 1
                             </p>
-    
+
                             <div>
                                 <img src="./Assets/icone-do-card.png" alt="">
                                 <span>4</span>
                             </div>
                         </div>
-    
+
                         <img src="./Assets/planes-thumb/2-SwiftDeluxe-GTAV-front.png" alt="">
-    
+
                         <div class="plane-name-price">
                             <p>swift DELUXE</p>
                             <p>$5,150,000</p>
                         </div>
-                    </div>
-                </a>
-
-                <a href="#" onclick="openPlane(planesData.vestra)">
-                <div class="card">
-                    <div class="card-title">
+                        </div>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#navScroll" onclick="openPlane(planesData.vestra)">
+                        <div class="card">
+                        <div class="card-title">
                         <p>
                             PARTE DA ATUALIZAÇÃO EXECUTIVA
                         </p>
@@ -152,20 +158,21 @@
                             <img src="./Assets/icone-do-card.png" alt="">
                             <span>2</span>
                         </div>
-                    </div>
+                        </div>
 
-                    <img src="./Assets/planes-thumb/3-Vestra-GTAV-front.png" alt="">
+                        <img src="./Assets/planes-thumb/3-Vestra-GTAV-front.png" alt="">
 
-                    <div class="plane-name-price">
+                        <div class="plane-name-price">
                         <p>Vestra</p>
                         <p>$950,000</p>
-                    </div>
-                </div>
-                </a>
-
-                <a href="#" onclick="openPlane(planesData.miljet)">
-                <div class="card">
-                    <div class="card-title">
+                        </div>
+                        </div>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#navScroll" onclick="openPlane(planesData.miljet)">
+                        <div class="card">
+                        <div class="card-title">
                         <p>
                             PARTE DA ATUALIZAÇÃO <br> ESCOLA DE AVIAÇÃO SA
                         </p>
@@ -174,20 +181,21 @@
                             <img src="./Assets/icone-do-card.png" alt="">
                             <span>16</span>
                         </div>
-                    </div>
+                        </div>
 
-                    <img src="./Assets/planes-thumb/4-Miljet-GTAV-front.png" alt="">
+                        <img src="./Assets/planes-thumb/4-Miljet-GTAV-front.png" alt="">
 
-                    <div class="plane-name-price">
+                        <div class="plane-name-price">
                         <p>Miljet</p>
                         <p>$1,750,000</p>
-                    </div>
-                </div>
-                </a>
-
-                <a href="#" onclick="openPlane(planesData.besra)">
-                <div class="card">
-                    <div class="card-title">
+                        </div>
+                        </div>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#navScroll" onclick="openPlane(planesData.besra)">
+                        <div class="card">
+                        <div class="card-title">
                         <p>
                             PARTE DA ATUALIZAÇÃO <br> ESCOLA DE AVIAÇÃO SA
                         </p>
@@ -196,20 +204,21 @@
                             <img src="./Assets/icone-do-card.png" alt="">
                             <span>1</span>
                         </div>
-                    </div>
+                        </div>
 
-                    <img src="./Assets/planes-thumb/5-Besra-GTAV-front.png" alt="">
+                        <img src="./Assets/planes-thumb/5-Besra-GTAV-front.png" alt="">
 
-                    <div class="plane-name-price">
+                        <div class="plane-name-price">
                         <p>Besra</p>
                         <p>$658,000</p>
-                    </div>
-                </div>
-                </a>
-
-                <a href="#" onclick="openPlane(planesData.swift)">
-                <div class="card">
-                    <div class="card-title">
+                        </div>
+                        </div>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#navScroll" onclick="openPlane(planesData.swift)">
+                        <div class="card">
+                        <div class="card-title">
                         <p>
                             PARTE DA ATUALIZAÇÃO <br> ESCOLA DE AVIAÇÃO SA
                         </p>
@@ -218,64 +227,67 @@
                             <img src="./Assets/icone-do-card.png" alt="">
                             <span>4</span>
                         </div>
-                    </div>
+                        </div>
 
-                    <img src="./Assets/planes-thumb/6-SwiftClassic-GTAV-front.png" alt="">
+                        <img src="./Assets/planes-thumb/6-SwiftClassic-GTAV-front.png" alt="">
 
-                    <div class="plane-name-price">
+                        <div class="plane-name-price">
                         <p>Swift</p>
                         <p>$1,500,000 - $1,600,000</p>
-                    </div>
-                </div>
-            </a>
-
-                <a href="#" onclick="openPlane(planesData.duster)">
-                <div class="card">
-                    <div class="card-title">
+                        </div>
+                        </div>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#navScroll" onclick="openPlane(planesData.duster)">
+                        <div class="card">
+                        <div class="card-title">
                         <p>
 
                         </p>
 
                         <div>
-                            <img src="./Assets/icone-do-card.png" alt="">
-                            <span>2</span>
+                        <img src="./Assets/icone-do-card.png" alt="">
+                        <span>2</span>
                         </div>
-                    </div>
+                        </div>
 
-                    <img src="./Assets/planes-thumb/7-Duster-GTAV-front.png" alt="">
+                        <img src="./Assets/planes-thumb/7-Duster-GTAV-front.png" alt="">
 
-                    <div class="plane-name-price">
+                        <div class="plane-name-price">
                         <p>Duster</p>
                         <p>$275,000</p>
-                    </div>
-                </div>
-            </a>
-
-                <a href="#" onclick="openPlane(planesData.shamal)"> 
-                <div class="card">
-                    <div class="card-title">
+                        </div>
+                        </div>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#navScroll" onclick="openPlane(planesData.shamal)"> 
+                        <div class="card">
+                        <div class="card-title">
                         <p>
 
                         </p>
 
                         <div>
-                            <img src="./Assets/icone-do-card.png" alt="">
-                            <span>10</span>
+                        <img src="./Assets/icone-do-card.png" alt="">
+                        <span>10</span>
                         </div>
-                    </div>
+                        </div>
 
-                    <img src="./Assets/planes-thumb/8-Shamal-GTAV-front.png" alt="">
+                        <img src="./Assets/planes-thumb/8-Shamal-GTAV-front.png" alt="">
 
-                    <div class="plane-name-price">
+                        <div class="plane-name-price">
                         <p>Shamal</p>
                         <p>$1,150,000</p>
-                    </div>
-                </div>
-            </a>
-
-                <a href="#" onclick="openPlane(planesData.cuban800)">
-                <div class="card">
-                    <div class="card-title">
+                        </div>
+                        </div>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#navScroll" onclick="openPlane(planesData.cuban800)">
+                        <div class="card">
+                        <div class="card-title">
                         <p>
 
                         </p>
@@ -284,20 +296,22 @@
                             <img src="./Assets/icone-do-card.png" alt="">
                             <span>2</span>
                         </div>
-                    </div>
+                        </div>
 
-                    <img src="./Assets/planes-thumb/9-Cuban800-GTAV-front.png" alt="">
+                        <img src="./Assets/planes-thumb/9-Cuban800-GTAV-front.png" alt="">
 
-                    <div class="plane-name-price">
+                        <div class="plane-name-price">
                         <p>Cuban 800</p>
                         <p>$240,000</p>
-                    </div>
-                </div>
-            </a>
+                        </div>
+                        </div>
+                        </a>
 
-                <a href="#" onclick="openPlane(planesData.luxor)">
-                <div class="card">
-                    <div class="card-title">
+                        </li>
+                        <li>
+                        <a href="#navScroll" onclick="openPlane(planesData.luxor)">
+                        <div class="card">
+                        <div class="card-title">
                         <p>
 
                         </p>
@@ -306,20 +320,21 @@
                             <img src="./Assets/icone-do-card.png" alt="">
                             <span>10</span>
                         </div>
-                    </div>
+                        </div>
 
-                    <img src="./Assets/planes-thumb/10 Luxor-GTAV-front.png" alt="">
+                        <img src="./Assets/planes-thumb/10 Luxor-GTAV-front.png" alt="">
 
-                    <div class="plane-name-price">
+                        <div class="plane-name-price">
                         <p>Luxor</p>
                         <p>$1,500,000</p>
-                    </div>
-                </div>
-            </a>
-
-                <a href="#" onclick="openPlane(planesData.mallard)">
-                <div class="card">
-                    <div class="card-title">
+                        </div>
+                        </div>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#navScroll" onclick="openPlane(planesData.mallard)">
+                        <div class="card">
+                        <div class="card-title">
                         <p>
 
                         </p>
@@ -328,20 +343,21 @@
                             <img src="./Assets/icone-do-card.png" alt="">
                             <span>1</span>
                         </div>
-                    </div>
+                        </div>
 
-                    <img src="./Assets/planes-thumb/11 Mallard-GTAV-front.png" alt="">
+                        <img src="./Assets/planes-thumb/11 Mallard-GTAV-front.png" alt="">
 
-                    <div class="plane-name-price">
+                        <div class="plane-name-price">
                         <p>Mallard</p>
                         <p>$250,000</p>
-                    </div>
-                </div>
-            </a>
-            
-                <a href="#" onclick="openPlane(planesData.frogger)">
-                <div class="card">
-                    <div class="card-title">
+                        </div>
+                        </div>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#navScroll" onclick="openPlane(planesData.frogger)">
+                        <div class="card">
+                        <div class="card-title">
                         <p>
 
                         </p>
@@ -350,39 +366,44 @@
                             <img src="./Assets/icone-do-card.png" alt="">
                             <span>4</spa>
                         </div>
-                    </div>
+                        </div>
 
-                    <img src="./Assets/planes-thumb/12 Frogger-GTAV-front.png" alt="">
+                        <img src="./Assets/planes-thumb/12 Frogger-GTAV-front.png" alt="">
 
-                    <div class="plane-name-price">
+                        <div class="plane-name-price">
                         <p>Frogger</p>
                         <p>$1,300,000</p>
-                    </div>
-                </div>
-            </a>
-
-                <a href="#" onclick="openPlane(planesData.maverick)">
-                <div class="card">
-                    <div class="card-title">
-                        <p>
-                            
-                        </p>
-
-                        <div>
-                            <img src="./Assets/icone-do-card.png" alt="">
-                            <span>4</span>
                         </div>
-                    </div>
+                        </div>
+                        </a>
 
-                    <img src="./Assets/planes-thumb/13 Maverick-GTAV-front.png" alt="">
+                        </li>
+                        <li>
+                            <a href="#navScroll" onclick="openPlane(planesData.maverick)">
+                                <div class="card">
+                                    <div class="card-title">
+                                    <p>
 
-                    <div class="plane-name-price">
-                        <p>Maverick</p>
-                        <p>$780,000</p>
-                    </div>
+                                    </p>
+
+                                    <div>
+                                <img src="./Assets/icone-do-card.png" alt="">
+                                <span>4</span>
+                                </div>
+                                </div>
+
+                                <img src="./Assets/planes-thumb/13 Maverick-GTAV-front.png" alt="">
+
+                                <div class="plane-name-price">
+                                <p>Maverick</p>
+                                <p>$780,000</p>
+                                </div>
+
+                                </div>
+                            </a>
+                        </li>
+                    </ol>
                 </div>
-            </a>
-            </div>
             </div>
         </section>
 

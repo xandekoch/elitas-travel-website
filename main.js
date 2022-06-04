@@ -107,7 +107,7 @@ planesData = {
 };
 
 function homeReturn() {
-  document.body.classList.remove("clicked");
+document.body.classList.remove("clicked");
 }
 
 function openPlane(plane) {
@@ -122,4 +122,8 @@ function openPlane(plane) {
   planePrice.innerText = plane.price;
   planeDescription.innerText = plane.description;
   imgPath.src = plane.imgPath;
+}
+
+function orderList(){
+  listOrderId.classList.add('orderListChange')
 }
