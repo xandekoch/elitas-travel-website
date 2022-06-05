@@ -28,7 +28,7 @@ body {
 }
 
 .wrapper {
-  width: 127.2rem;
+  width: 66.25vw;
   margin-inline: auto;
 }
 
@@ -41,9 +41,12 @@ button:hover {
   border: 0.1rem solid rgba(124, 124, 124, 0.5);
   border-radius: 0.5rem;
   background: linear-gradient(rgb(255, 255, 255), rgb(177, 177, 177));
+}
 
-  font-size: 2rem;
+.button-style{
+  font-size: 1.05vw;
   color: black;
+  font-weight: 400;
 }
 
 .button-style:hover {
@@ -57,7 +60,7 @@ header {
   background-size: 100%;
   background-repeat: no-repeat;
 
-  height: 55rem;
+  height: 28.64vw;
   width: 100%;
 
   display: flex;
@@ -69,31 +72,39 @@ body #home{
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  height: 27rem;
+  height: 14.06vw;
   width: 100%;
   top: 0;
 }
 
 header .wrapper .texts {
-  margin-top: 4.6rem;
+  margin-top: 2.4vw;
 }
 
 header .wrapper img {
-  width: 35.7rem;
-  height: 10.4rem;
+  width: 18.594vw;
+  height: 5.416vw;
 }
 
 header .wrapper .title {
   color: red;
-  font-size: 2.2rem;
-  margin-top: 4.3rem;
+  font-size: 1.15vw;
+  margin-top: 2.23vw;
   font-weight: 700;
 }
 
 header .wrapper .subtitle {
   color: black;
-  font-size: 1.6rem;
-  margin-top: 5.2rem;
+  font-size: .83vw;
+  margin-top: 2.7vw;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40;
 }
 
 /*========== AUTHORS ==========*/
@@ -212,47 +223,32 @@ nav {
 }
 
 nav .wrapper {
-  height: 9rem;
-  padding-inline: 3rem;
+  height: 4.7vw;
+  padding-inline: 1.56vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-nav h2{
-  font-size: 3.5rem;
+nav h2 {
+  font-size: 1.5vw;
   color: white;
 }
 
-nav p{
-  font-size: 3.5rem;
-  color: white;
-  text-transform: uppercase;
-}
-
-nav button{
+nav button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 31.6rem;
-  height: 5.7rem;
-  padding-inline: 1.5rem;
+  width: 16.4vw;
+  height: 3vw;
+  padding-inline: 0.78vw;
 }
 
-nav button #arrowUp{
-  width: 4rem;
-  height: 4rem;
-}
-
-nav button #arrowDown{
-  width: 2rem;
-  height: 2rem;
-}
 
 nav button::after {
   content: "";
   background: black;
-  width: 2.4rem;
+  width: 1.25vw;
   height: 0.1rem;
 }
 
@@ -263,7 +259,7 @@ nav button:hover::after {
 /*========== SECTION ==========*/
 
 .content {
-  padding-bottom: 4.5rem;
+  padding-bottom: 2.34vw;
 }
 
 .content .wrapper {
@@ -271,15 +267,15 @@ nav button:hover::after {
 }
 
 .content .wrapper .cards {
-  padding-inline: 3rem;
-  padding-top: 1.7rem;
-  padding-bottom: 3rem;
+  padding-inline: 1.5vw;
+  padding-top: 0.88vw;
+  padding-bottom: 1.56vw;
 
 }
 
 .content .wrapper .card {
-  width: 38.4rem;
-  height: 32.3rem;
+  width: 20vw;
+  
 
   display: flex;
   flex-direction: column;
@@ -289,8 +285,8 @@ nav button:hover::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 1.5rem;
-  height: 6.7rem;
+  padding-inline: 0.78vw;
+  height: 3.5vw;
   width: 100%;
   background: linear-gradient(rgb(104, 177, 223), rgb(69, 120, 165));
 }
@@ -301,29 +297,28 @@ nav button:hover::after {
 }
 
 .card-title div img {
-  width: 4rem;
-  height: 4rem;
+  width: 2vw;
 }
 
 .card-title p {
   color: white;
-  font-size: 1.8rem;
+  font-size: 1vw;
   text-transform: uppercase;
 }
 
 .card-title div span {
-  font-size: 1.2rem;
+  font-size: .6vw;
   color: white;
 }
 
 .card img {
   width: 100%;
-  height: 21rem;
+  
 }
 
 .card .plane-name-price {
   width: 100%;
-  height: 4.6rem;
+  height: 2.4vw;
   background: #35546f;
   display: flex;
   align-items: center;
@@ -334,13 +329,13 @@ nav button:hover::after {
 .plane-name-price p {
   display: inline-block;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1vw;
   text-transform: uppercase;
 }
 
 body::after {
   content: '@All rights reserved to Rockstar Games Inc.';
-  font-size: 1.6rem;
+  font-size: .83vw;
   text-align: center;
   display: block;
   padding-bottom: 1rem;
@@ -349,44 +344,45 @@ body::after {
 /*========== PLANE INFO ==========*/
 .content .plane-info {
   display: flex;
-  gap: 2.5rem;
-  margin-inline: 3rem;
-  margin-bottom: 2.5rem;
+  gap: 1.3vw;
+  margin-inline: 1.56vw;
+  margin-bottom: 1.3vw;
 }
 
 .content .plane-info img {
-  margin-top: 3rem;
-  width: 77.4rem;
+  margin-top: 1.56vw;
+  width: 40.31vw;
 }
 
 .content .plane-info button {
   display: grid;
   place-items: center;
   width: 100%;
-  height: 5.7rem;
+  height: 3vw;
 
-  margin-top: 2.3rem;
-  margin-bottom: 3.5rem;
+  margin-top: 1.2vw;
+  margin-bottom: 1.82vw;
+  font-size: 1.5vw;
 }
 
 .content .plane-info p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .content .plane-info-bar {
-  margin-bottom: 1.3rem; /* plus 1.7 of cards top = 3rem */
+  margin-bottom: 0.67vw; /* plus 1.7 of cards top = 3rem */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 3rem;
+  padding-inline: 1.56vw;
 
-  height: 9rem;
+  height: 4.68vw;
   width: 100%;
   background: linear-gradient(rgb(104, 177, 223, 0.8), rgb(69, 120, 165, 0.9));
 }
 
 .content .plane-info-bar h2{
-  font-size: 3.5rem;
+  font-size: 1.82vw;
   color: white;
 }
 
@@ -394,15 +390,17 @@ body::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 31.6rem;
-  height: 5.7rem;
-  padding-inline: 1.5rem;
+  width: 16.45vw;
+  height: 2.96vw;
+  padding-inline: 0.78vw;
+
+  font-size: 1.05vw;
 }
 
 .content .plane-info-bar button::after {
   content: "";
   background: black;
-  width: 2.4rem;
+  width: 1.25vw;
   height: 0.1rem;
 }
 
@@ -415,6 +413,12 @@ body.clicked #home {
   visibility: visible;
 }
 
+nav p{
+  font-size: 1.82vw;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
 body.clicked nav p,
 nav h2,
 nav button,
@@ -424,7 +428,7 @@ body.clicked .content .plane-info-bar {
 }
 
 body.clicked header {
- height: 36rem; 
+ height: 18.75vw; 
 }
 
 body.clicked header .texts h2,
@@ -439,13 +443,51 @@ nav p,
 body.clicked nav h2,
 body.clicked nav button {
   display: none;
-} 
+}
+
+/*========== PRICE ORDER ==========*/
 
 .orderList{
   list-style: none;
   display: grid;
   grid-template-columns: auto auto auto;
-  gap: 3rem;
+  gap: 1.5vw;
+}
+
+nav button .arrowUp,
+#navButton2 .arrowUp{
+  width: 2.5vh;
+  display: none;
+}
+
+nav button .arrowDown,
+#navButton2 .arrowDown{
+  width: 2.5vh;
+  display: none;
+}
+
+nav #navButton1.orderListChange .arrowDown,
+nav #navButton1.orderListInverse .arrowUp,
+#navButton2.orderListInverse .arrowUp, 
+#navButton2.orderListChange .arrowDown {
+  display: block;
+}
+
+nav #navButton1.orderListInverse .arrowDown,
+nav #navButton1.orderListChange .arrowUp,
+#navButton2.orderListInverse .arrowDown,
+#navButton2.orderListChange .arrowUp {
+  display: none;
+}
+
+nav #navButton1.orderListInverse::after,
+nav #navButton1.orderListChange::after {
+  display: none;
+}
+
+#navButton2.orderListInverse::after,
+#navButton2.orderListChange::after {
+  display: none;
 }
 
 .orderListChange li:first-child{
@@ -499,8 +541,76 @@ body.clicked nav button {
 .orderListChange li:nth-child(13){
   order: 5;
 }
- 
 
-.none{
-  display: none;
+/*========== PRICE ORDER INVERSE ==========*/
+
+.orderListChangeInverse li:nth-child(1){
+  order: 1;
 }
+
+.orderListChangeInverse li:nth-child(2){
+  order: 2;
+}
+
+.orderListChangeInverse li:nth-child(3){
+  order: 8;
+}
+
+.orderListChangeInverse li:nth-child(4){
+  order: 3;
+}
+
+.orderListChangeInverse li:nth-child(5){
+  order: 10;
+}
+
+.orderListChangeInverse li:nth-child(6){
+  order: 4;
+}
+
+.orderListChangeInverse li:nth-child(7){
+  order: 11;
+}
+
+.orderListChangeInverse li:nth-child(8){
+  order: 7;
+}
+
+.orderListChangeInverse li:nth-child(9){
+  order: 13;
+}
+
+.orderListChangeInverse li:nth-child(10){
+  order: 5;
+}
+
+.orderListChangeInverse li:nth-child(11){
+  order: 12;
+}
+
+.orderListChangeInverse li:nth-child(12){
+  order: 6;
+}
+
+.orderListChangeInverse li:nth-child(13){
+  order: 9;
+}
+
+/*========== MEDIA QUERIES ==========*/
+
+/* @media screen and (max-width: 900px) {
+  .wrapper{
+    width: fit-content;
+    display: flex;
+    justify-content: center; 
+  }
+
+  .content .wrapper .card{
+    width: 100%;
+  }
+
+  .orderList{
+    display: flex;
+    flex-direction: column;
+  }
+} */

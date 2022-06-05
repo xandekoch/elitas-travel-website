@@ -6,6 +6,8 @@
         <title>--- Elitas Travel - A aeronave dos seus sonhos, a um clique de distância! ---</title>
 
         <link rel="stylesheet" href="./style.css">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
     <body>
 
@@ -69,10 +71,15 @@
                 <div class="wrapper">               
                     <h2>Novidades no estoque</h2>
                 
-                    <button id="navButton" class="button-style" onclick="orderList()">
+                    <button id="navButton1" class="button-style orderListButton" onclick="onClickOrder()">
                         Organizar por preço
-                        <img id="arrowUp" src="./arrow-up.png" alt="">
-                        <img id="arrowDown" src="./arrow-down.png" alt="">
+                        <span class="arrowUp material-symbols-outlined">
+                            expand_less
+                            </span>
+                        
+                        <span class="arrowDown material-symbols-outlined">
+                            expand_more
+                            </span>
                     </button>
 
                     <p id="planeName"></p>
@@ -95,7 +102,16 @@
 
                 <div class="plane-info-bar">
                     <h2>Novidades no estoque</h2>
-                    <button class="button-style">Organizar por preço</button>
+                    <button id="navButton2" onclick="onClickOrder()" class="button-style orderListButton">Organizar por preço
+                        <span class="arrowUp material-symbols-outlined">
+                            expand_less
+                            </span>
+                        
+                        <span class="arrowDown material-symbols-outlined">
+                            expand_more
+                            </span>
+                    </button>
+                    
                 </div>
                 
                 <div id="listOrderId" class="cards">

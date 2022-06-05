@@ -124,6 +124,43 @@ function openPlane(plane) {
   imgPath.src = plane.imgPath;
 }
 
-function orderList(){
-  listOrderId.classList.add('orderListChange')
+let statePrice = 0; 
+
+function onClickOrder() {
+  if (statePrice == 'orderList') {
+    console.log(statePrice)
+    listOrderId.classList.add('orderListChangeInverse')
+    listOrderId.classList.remove('orderListChange')
+    statePrice = 'orderListInverse'
+    onClickButtonPrice(statePrice) 
+  } 
+  else if (statePrice == 'orderListInverse') {
+    console.log(statePrice)
+    listOrderId.classList.add('orderListChange')
+    listOrderId.classList.remove('orderListChangeInverse')
+    statePrice = 'orderList'
+    onClickButtonPrice(statePrice)
+  }
+  else {
+    console.log('first')
+    listOrderId.classList.add('orderListChange')
+    listOrderId.classList.remove('orderListChangeInverse')
+    statePrice = 'orderList'
+    onClickButtonPrice(statePrice)
+  }
+}
+
+function onClickButtonPrice(statePrice) {
+  if (statePrice == 'orderList') {
+    navButton1.classList.add('orderListChange')
+    navButton1.classList.remove('orderListInverse')   
+    navButton2.classList.add('orderListChange')
+    navButton2.classList.remove('orderListInverse')  
+  } 
+  else if (statePrice == 'orderListInverse') {
+    navButton1.classList.add('orderListInverse')
+    navButton1.classList.remove('orderListChange')
+    navButton2.classList.add('orderListInverse')
+    navButton2.classList.remove('orderListChange')
+  }
 }
